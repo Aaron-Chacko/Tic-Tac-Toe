@@ -1,0 +1,64 @@
+/* General styles */
+html, body {
+  height: 100%; /* Ensure the container takes the full height */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: #f4f4f4; /* Light background color */
+  font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Game container */
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.game-board {
+  margin-right: 20px; /* Space between board and info */
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Board styling */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  text-align: center;
+  width: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+}
+
+.square:active {
+  background-color: #ddd; /* Click effect */
+}
